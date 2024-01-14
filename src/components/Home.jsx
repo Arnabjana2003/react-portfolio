@@ -8,7 +8,7 @@ import About from "./About";
 
 function Home() {
   return <div className=" w-full">
-    <div className=" flex justify-between">
+    <div className="mt-12 flex justify-between load-animate">
         <div className=" p-3 mr-3 md:mr-10 lg:mr-14 my-auto">
             <ul className=" flex flex-col">
                 <li className=" w-5 md:w-7 my-3">
