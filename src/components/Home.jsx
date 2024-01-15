@@ -6,6 +6,7 @@ import image5 from "../Assets/linkedin-logo-bold-svgrepo-com.svg"
 import ProfileImg from "./ProfileImg";
 import About from "./About";
 import Skills from "./Skills";
+import Qualification from "./Qualification";
 
 function Home() {
   return <div className=" w-full">
@@ -43,6 +44,9 @@ function Home() {
     </section>
     <section className=" mt-20">
     <Skills skills/>
+    </section>
+    <section className=" mt-20">
+    <Qualification qualification/>
     </section>
   </div>;
 }
