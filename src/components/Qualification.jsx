@@ -1,5 +1,7 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
+import expImg from "../Assets/job-search-symbol-of-suitcase-and-curriculum-paper-svgrepo-com.svg"
+import eduImg from "../Assets/education-svgrepo-com.svg"
 
 function Qualification({ qualification = false }) {
   const qualificationList = [
@@ -31,19 +33,21 @@ function Qualification({ qualification = false }) {
     },
   ];
   return (
-    <div className="p-3 mt-10 mb-6 w-full overflow-x-hidden min-h-screen">
+    <div >
       <SectionHeading
         h1={"Qualification"}
         p={"My personal journey"}
         animate={qualification}
       />
 
-      <div className=" mt-20 flex justify-center">
-        <div className=" flex flex-col items-center">
-        <div className=" flex mb-3 w-56 md:w-[25rem] justify-evenly">
-          <h3 className=" max-md:mx-4 text-lg border-b font-mono font-semibold">Education</h3>
-          <h3 className=" max-md:mx-4 text-lg border-b font-mono font-semibold">Experience</h3>
+      <div className=" mt-20 flex flex-col items-center">
+      <div className=" flex mb-3 w-full md:w-[25rem] justify-evenly">
+          <h3 className=" max-md:mx-4 text-lg border-b font-mono font-semibold flex">
+            <img src={eduImg} className=" w-5 md:w-7 mr-2"/>Education</h3>
+          <h3 className=" max-md:mx-4 text-lg border-b font-mono font-semibold flex">
+          <img src={expImg} className=" w-5 md:w-7 mr-2"/>Experience</h3>
         </div>
+        <div className=" flex flex-col items-center">
         <div>
           {qualificationList.map((item) => {
             return item.type == "education" ? (

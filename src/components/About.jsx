@@ -3,7 +3,8 @@ import image6 from "../Assets/coding-programming-language-svgrepo-com.svg"
 import image7 from "../Assets/complete-svgrepo-com.svg"
 import image8 from "../Assets/html-tag-svgrepo-com.svg"
 import image9 from "../Assets/IMG_20240110_181927.jpg"
-import { useParams } from 'react-router-dom'
+import resumeImg from "../Assets/resume-business-cv-work-job-curriculum-2-svgrepo-com.svg"
+import resume from "../Assets/Arnab Jana.pdf"
 import SectionHeading from './SectionHeading'
 
 function About({about=false}) {
@@ -33,7 +34,9 @@ function About({about=false}) {
         </div>
         <div className={`${about?'animate':null} md:text-right p-4`}>
             <p className=" text-slate-700 mt-5 lg:text-lg">I'm currently pursuing BCA from Mahishadal Raj College, Purba Medinipur. I will be graduated by 2027. My passion and dedication to my work are evident in the effort and enthusiam I bring to every task.</p>
-            <button className="shadow-md shadow-black mt-6 py-2 px-4 bg-slate-600 text-white rounded-lg md:text-lg lg:text-xl font-semibold">Download Resume</button>
+            <button className="shadow-md shadow-black mt-6 py-2 px-4 bg-slate-600 text-white rounded-lg md:text-lg lg:text-xl font-semibold " >
+            <a className='flex items-center' href={resume} download>Download Resume
+            <img src={resumeImg} className=' p-1 rounded-md bg-white w-7 ml-3'/></a></button>
         </div>
             </div>
             <div className={`flex justify-center p-3 items-center ${about?'animate':null} `}>
