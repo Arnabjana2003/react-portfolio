@@ -29,7 +29,7 @@ function Projects({projects=false}) {
     <div className="p-3 mt-10 mb-6 w-full overflow-x-hidden min-h-screen">
         <SectionHeading h1={"Projects"} p={"My portfolio"} animate={projects} />
         <div className=' flex flex-wrap justify-center'>
-            {projectsList.map((project,index)=><div key={index} className=' m-4'>
+            {projectsList.map((project,index)=><div key={index} className={`m-4 ${projects?"animate":null}`}>
                 <ProjectCard imgLink={project.imgLink} desc={project.desc} websiteLink={project.websiteLink} githubLink={project.githubLink} />
             </div>)}
         </div>
