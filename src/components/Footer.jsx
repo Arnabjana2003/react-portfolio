@@ -34,7 +34,7 @@ function Footer() {
             </ul>
         </div>
         <div className=' mt-8 '>
-            <p className='text-sm'><span className='font-semibold'>@Arnab.</span> All rights resrved.</p>
+            <p className='text-sm'><span className='font-semibold'>@Arnab.</span> All rights reserved.</p>
         </div>
     </div>
   )
