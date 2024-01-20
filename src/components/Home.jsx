@@ -20,10 +20,10 @@ function Home() {
         
     }
     return <div className=" w-full">
-      <div className="w-full flex justify-end pr-4">
+      {/* <div className="w-full flex justify-end pr-4">
       <p onClick={scroll} id="scroll" className=" flex items-center ">Scroll down<span><img className=" w-4 rotate-90" src={arrow}/></span></p>
-      </div>
-    <div className="mt-1 flex justify-between load-animate">
+      </div> */}
+    <div className="mt-10 flex justify-between load-animate">
         <div className=" p-3 mr-1 md:mr-10 lg:mr-14 my-auto">
             <ul className=" flex flex-col">
                 <li className=" w-4 md:w-5 my-3">
@@ -63,19 +63,19 @@ function Home() {
         </div>
     </div>
     <section id="about-sec" className=" mt-20">
-    <About about/>
+    <About />
     </section>
     <section className=" mt-20">
-    <Skills skills/>
+    <Skills />
     </section>
     <section className=" mt-20">
-    <Qualification qualification/>
+    <Qualification />
     </section>
     <section className=" mt-32">
-    <Projects projects/>
+    <Projects />
     </section>
     <section className=" mt-32">
-    <Contact contact/>
+    <Contact />
     </section>
   </div>;
 }
