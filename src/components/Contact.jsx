@@ -5,7 +5,7 @@ import emailImg from "../Assets/email-9-svgrepo-com.svg"
 import arrow from "../Assets/right-arrow-svgrepo-com.svg"
 import ProfileImg from './ProfileImg'
 
-function Contact({contact}) {
+function Contact({contact=false}) {
   return (
     <div className="p-3 mt-10 mb-6 w-full overflow-x-hidden min-h-screen">
         <SectionHeading h1={"Get in touch"} p={"Contact me"} animate={contact} />
