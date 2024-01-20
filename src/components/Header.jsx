@@ -41,8 +41,8 @@ function Header() {
         </div>
         <div className="hidden md:block">
           <ul className="flex">
-            {navLinks.map(item=>(
-                <li onClick={()=>setNavLogo(false)} className=" p-2 mx-1 lg:mx-5 md:text-lg font-semibold">
+            {navLinks.map((item,idx)=>(
+                <li key={idx} onClick={()=>setNavLogo(false)} className=" p-2 mx-1 lg:mx-5 md:text-lg font-semibold">
                     <Link className="hover:border-orange-300 hover:border-2 py-1 px-2 rounded-md" to={item.link}>{item.name}</Link>
               </li>
             ))}
@@ -55,8 +55,8 @@ function Header() {
       <div className="md:hidden">
       <div className={`${!navLogo?"h-0 p-0":"h-36 p-3"} overflow-hidden shadow-xl rounded-b-2xl`}>
           <ul className="flex flex-wrap justify-center">
-            {navLinks.map(item=>(
-                <li onClick={()=>setNavLogo(false)} className={`w-20 p-2 mx-5 md:text-lg font-semibold`}>
+            {navLinks.map((item,idx)=>(
+                <li key={idx} onClick={()=>setNavLogo(false)} className={`w-20 p-2 mx-5 md:text-lg font-semibold`}>
                     <Link className={"hover:border-orange-300 hover:border-2 py-1 px-2 rounded-md"} to={item.link}>{item.name}</Link>
               </li>
             ))}

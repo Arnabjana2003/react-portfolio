@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image2 from "../Assets/instalogo.svg"
 import image3 from "../Assets/facebook-logo-svgrepo-com.svg"
 import image4 from "../Assets/github-logo-svgrepo-com.svg"
@@ -10,11 +10,21 @@ import Qualification from "./Qualification";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
+import arrow from '../Assets/right-arrow-svgrepo-com.svg'
 
 function Home() {
-  return <div className=" w-full">
-    <div className="mt-12 flex justify-between load-animate">
-        <div className=" p-3 mr-3 md:mr-10 lg:mr-14 my-auto">
+    
+    const scroll = ()=>{
+        const sr = document.getElementById("about-sec")
+        sr.scrollIntoView(true)
+        
+    }
+    return <div className=" w-full">
+      <div className="w-full flex justify-end">
+      <p onClick={scroll} id="scroll" className=" flex items-center ">Scroll down<span><img className=" w-4 rotate-90" src={arrow}/></span></p>
+      </div>
+    <div className="mt-1 flex justify-between load-animate">
+        <div className=" p-3 mr-1 md:mr-10 lg:mr-14 my-auto">
             <ul className=" flex flex-col">
                 <li className=" w-4 md:w-5 my-3">
                     <a href="https://instagram.com/arnab_j.01?igshid=ZDdkNTZiNTM=">
@@ -52,7 +62,7 @@ function Home() {
             </div>
         </div>
     </div>
-    <section className=" mt-20">
+    <section id="about-sec" className=" mt-20">
     <About about/>
     </section>
     <section className=" mt-20">

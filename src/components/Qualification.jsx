@@ -49,9 +49,9 @@ function Qualification({ qualification = false }) {
         </div>
         <div className=" flex flex-col items-center">
         <div>
-          {qualificationList.map((item) => {
+          {qualificationList.map((item,idx) => {
             return item.type == "education" ? (
-              <div className="flex justify-start w-56 md:w-[25rem]">
+              <div key={idx} className="flex justify-start w-56 md:w-[25rem]">
                 <div className=" flex w-28 md:w-44">
                   <div className=" text-right mr-2">
                     <h4 className=" font-semibold md:text-lg mb-2">
@@ -76,7 +76,7 @@ function Qualification({ qualification = false }) {
                 </div>
               </div>
             ) : (
-              <div className="  flex justify-end w-56 md:w-[25rem]">
+              <div key={idx} className="  flex justify-end w-56 md:w-[25rem]">
                 <div className="flex w-[126px] md:w-[243px] ">
                   <div className=" flex flex-col items-center">
                     <div className=" w-4 md:w-5 h-4 md:h-5 bg-green-700  rounded-full"></div>

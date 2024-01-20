@@ -10,7 +10,7 @@ function App() {
         <div className=" z-50 fixed top-0 right-0 left-0 backdrop-blur-xl">
         <Header/>
         </div>
-        <div className=" mt-32">
+        <div className=" mt-28">
         <Outlet />
         </div>
         <Footer/>
