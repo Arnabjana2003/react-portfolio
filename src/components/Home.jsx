@@ -75,7 +75,7 @@ function Home() {
     <Projects />
     </section>
     <section className=" mt-32">
-    <Contact />
+    <Contact contact />
     </section>
   </div>;
 }
