@@ -12,7 +12,7 @@ function Footer() {
         <div className=' mt-4'>
         <ul className=" flex ">
                 <li className=" w-5 md:w-7 mx-3">
-                    <a href="https://instagram.com/arnab_j.01?igshid=ZDdkNTZiNTM=">
+                    <a href="https://www.instagram.com/arnab_ariyel/">
                     <img src={image2} alt="insta"/>
                     </a>
                 </li>

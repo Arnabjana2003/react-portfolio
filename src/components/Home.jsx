@@ -27,7 +27,7 @@ function Home() {
         <div className=" p-3 mr-1 md:mr-10 lg:mr-14 my-auto">
             <ul className=" flex flex-col">
                 <li className=" w-4 md:w-5 my-3">
-                    <a href="https://instagram.com/arnab_j.01?igshid=ZDdkNTZiNTM=">
+                    <a href="https://www.instagram.com/arnab_ariyel/">
                     <img src={image2} alt="insta"/>
                     </a>
                 </li>
