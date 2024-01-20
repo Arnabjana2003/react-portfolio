@@ -13,14 +13,14 @@ import { Link } from "react-router-dom";
 import arrow from '../Assets/right-arrow-svgrepo-com.svg'
 
 function Home() {
-    
+
     const scroll = ()=>{
         const sr = document.getElementById("about-sec")
         sr.scrollIntoView(true)
         
     }
     return <div className=" w-full">
-      <div className="w-full flex justify-end">
+      <div className="w-full flex justify-end pr-4">
       <p onClick={scroll} id="scroll" className=" flex items-center ">Scroll down<span><img className=" w-4 rotate-90" src={arrow}/></span></p>
       </div>
     <div className="mt-1 flex justify-between load-animate">
