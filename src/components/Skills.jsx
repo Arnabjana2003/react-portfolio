@@ -51,8 +51,8 @@ function Skills({skills=false}) {
             level: "Intermediate" 
         },
         {
-            name: "HTML",
-            level: "advanced" 
+            name: "Git",
+            level: "Basics" 
         },
     ]
   return (
