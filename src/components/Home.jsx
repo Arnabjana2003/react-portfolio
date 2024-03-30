@@ -57,7 +57,7 @@ function Home() {
                 <p className=" text-slate-500 mt-5 md:text-lg lg:text-xl">Software development enthusiastic,pursuing Bachelor's of Computer Application. Currently working on Frontend Development</p>
 
                 <button className="shadow-md shadow-black mt-6 py-2 px-4 bg-slate-600 text-white rounded-lg md:text-lg lg:text-xl font-semibold">
-                    <a href="mailto:arnabjana0099@gmail.com">Say hello!!</a>
+                    <a href="https://api.whatsapp.com/send?phone=+917076927417&text=Hello,%20more%20information!">Say hello!!</a>
                 </button>
             </div>
         </div>

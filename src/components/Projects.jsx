@@ -9,10 +9,10 @@ function Projects({projects=false}) {
     const projectsList = [
         {
             imgLink: photosbook,
-            name: "Photosbook",
-            desc: "Photos sharing web app like FACEBOOK using React JS in Frontend and Appwrite backend as service",
-            websiteLink: "https://photosbook.vercel.app",
-            githubLink: "https://github.com/Arnabjana2003/photobook"
+            name: "Picpulse",
+            desc: "Photos sharing web app like FACEBOOK using in MERN stack",
+            websiteLink: "https://picpulse.vercel.app",
+            githubLink: "https://github.com/Arnabjana2003/picpulse-frontend"
         },
         {
             imgLink: onlineattendance,

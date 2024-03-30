@@ -4,7 +4,7 @@ import image7 from "../Assets/complete-svgrepo-com.svg"
 import image8 from "../Assets/html-tag-svgrepo-com.svg"
 import image9 from "../Assets/IMG_20240110_181927.jpg"
 import resumeImg from "../Assets/resume-business-cv-work-job-curriculum-2-svgrepo-com.svg"
-import resume from "../Assets/Arnab Jana.pdf"
+import resume from "../Assets/Resume_Arnab_Jana.pdf"
 import SectionHeading from './SectionHeading'
 
 function About({about=false}) {
