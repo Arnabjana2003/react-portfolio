@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/colorful-letter-gradient-logo-design_474888-2309.avif" />
@@ -14,8 +14,38 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://arnabjana-portfolio.vercel.app/">
     <meta name="google-site-verification" content="G9wxTGrFFNtIOJZYAxUVvQaHSoCk2Ag0AjLw_p4xuuI" />
+    <style>
+      #canvas{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.circle{
+    width: 40px;
+    height: 40px;   
+    border-radius: 50%;
+    position: absolute;
+    animation: circle 0.9s;
+    opacity: 0;
+}
+@keyframes circle{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+    </style>
   </head>
   <body>
+    <div id="canvas" class="bg-gray-100 dark:bg-slate-900 text-slate-800 dark:text-slate-300"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
@@ -48,6 +78,32 @@
       }
       scrollAnimation()
       homeLoadingAnimation()
+    </script>
+    <script>
+      const canvas = document.querySelector("#canvas")
+
+let i=0;
+const colorArr = ["red","blue","yellow","pink","orange","skyblue"]
+
+document.addEventListener('mousemove',(e)=>{
+    if(i==colorArr.length) i=0;
+
+    const circle = document.createElement('div')
+    circle.classList.add('circle')
+
+    const x = e.clientX
+    const y = e.clientY
+    circle.style.top = `${y - 25}px` 
+    circle.style.left = `${x -25}px`
+    circle.style.backgroundColor = colorArr[i]
+    i++;
+    canvas.appendChild(circle)
+
+
+    setTimeout(()=>{
+        canvas.removeChild(circle)
+    },1000)
+})
     </script>
   </body>
 </html>

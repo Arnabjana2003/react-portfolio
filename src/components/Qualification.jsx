@@ -31,6 +31,12 @@ function Qualification({ qualification = false }) {
       year: "2023-2024",
       type: "experience",
     },
+    {
+      name: "MERN stack development Intern",
+      des: "Full stack development at Sicu-aura",
+      year: "May'24 - August'24",
+      type: "experience",
+    },
   ];
   return (
     <div >
@@ -53,25 +59,25 @@ function Qualification({ qualification = false }) {
             return item.type == "education" ? (
               <div key={idx} className="flex justify-start w-56 md:w-[25rem]">
                 <div className=" flex w-28 md:w-44">
-                  <div className=" text-right mr-2">
-                    <h4 className=" font-semibold md:text-lg mb-2">
+                  <div className=" text-right mr-2 dark:text-slate-300">
+                    <h4 className=" font-semibold md:text-lg mb-2 dark:text-white">
                       {item.name}
                     </h4>
-                    <p className=" mb-2 text-sm md:text-base text-slate-500">
+                    <p className=" mb-2 text-sm md:text-base ">
                       {item.des}
                     </p>
                     {item.marks && (
-                      <p className=" mb-2 text-sm md:text-base text-slate-500">
+                      <p className=" mb-2 text-sm md:text-base">
                         {item.marks}
                       </p>
                     )}
-                    <p className=" mb-4 text-sm md:text-base text-slate-500">
+                    <p className=" mb-4 text-sm md:text-base">
                       {item.year}
                     </p>
                   </div>
                   <div className=" flex flex-col items-center">
-                    <div className=" w-4 md:w-5 h-4 md:h-5 bg-green-700  rounded-full"></div>
-                    <div className=" bg-green-700 w-[2px] h-full"></div>
+                    <div className=" w-4 md:w-5 h-4 md:h-5 bg-green-700 dark:bg-green-400 rounded-full"></div>
+                    <div className=" bg-green-700 dark:bg-green-400 w-[2px] h-full"></div>
                   </div>
                 </div>
               </div>
@@ -79,17 +85,17 @@ function Qualification({ qualification = false }) {
               <div key={idx} className="  flex justify-end w-56 md:w-[25rem]">
                 <div className="flex w-[126px] md:w-[243px] ">
                   <div className=" flex flex-col items-center">
-                    <div className=" w-4 md:w-5 h-4 md:h-5 bg-green-700  rounded-full"></div>
-                    <div className=" bg-green-700 w-[2px] h-full"></div>
+                    <div className=" w-4 md:w-5 h-4 md:h-5 bg-green-700 dark:bg-green-400  rounded-full"></div>
+                    <div className=" bg-green-700 dark:bg-green-400  w-[2px] h-full"></div>
                   </div>
-                  <div className=" text-left ml-2">
-                    <h4 className=" font-semibold md:text-lg mb-2">
+                  <div className=" text-left ml-2 dark:text-slate-300">
+                    <h4 className=" font-semibold md:text-lg mb-2 dark:text-white">
                       {item.name}
                     </h4>
-                    <p className=" mb-2 text-sm md:text-base text-slate-500">
+                    <p className=" mb-2 text-sm md:text-base ">
                       {item.des}
                     </p>
-                    <p className=" mb-4 text-sm md:text-base text-slate-500">
+                    <p className=" mb-4 text-sm md:text-base">
                       {item.year}
                     </p>
                   </div>

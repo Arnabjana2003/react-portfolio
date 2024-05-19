@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 *{
-    transition: all ease 1s;
+    transition: all ease 0.2s;
 }
 .animate{
     transform: rotateY(90deg);
-    transition: all ease-in 1s;
+    transition: all ease-in 0.2s;
 }
+
+
+@layer utilities {
+    .gradient-text {
+      background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+      display: inline;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient{
+    background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+    color:white
+    }
+  }

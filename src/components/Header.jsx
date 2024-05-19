@@ -32,10 +32,10 @@ function Header() {
      },
     ];
   return (
-    <div>
-      <header className={` bg-gray-100 p-3 h-20 md:h-24 w-full ${!navLogo?"null":null} border-b-2 flex justify-between items-center`}>
+    <div className="text-slate-900 ">
+      <header className={` bg-gray-100 dark:bg-slate-950 dark:text-white/70 p-3 h-20 md:h-24 w-full ${!navLogo?"null":null} border-b-2 dark:border-slate-700 flex justify-between items-center`}>
         <div>
-          <h2 onClick={()=>setNavLogo(false)} className=" text-lg md:text-xl font-semibold ml-2">
+          <h2 onClick={()=>setNavLogo(false)} className=" text-lg md:text-2xl font-semibold md:font-bold ml-2 dark:gradient-text ">
             <Link to="/">ARNAB</Link>
           </h2>
         </div>

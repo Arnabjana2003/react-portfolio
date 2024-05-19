@@ -48,15 +48,16 @@ function Home() {
                 </li>
             </ul>
         </div>
-        <div className=" p-2 flex-grow justify-center md:justify-evenly items-center flex max-md:flex-col mb-6">
+
+        <div className="mt-10 p-2 flex-grow justify-center md:justify-evenly items-center flex max-md:flex-col mb-6">
             <div><ProfileImg/></div>
             <div className=" mt-5 text-center">
 
-                <h1 className=" font-sans text-4xl sm:text-5xl md:6xl font-bold first-letter:text-slate-900 tracking-wider text-slate-800">Arnab Jana</h1>
+                <h1 className=" font-sans text-4xl sm:text-5xl md:6xl font-bold tracking-wider text-slate-800 dark:gradient-text">Arnab Jana</h1>
 
-                <p className=" text-slate-500 mt-5 md:text-lg lg:text-xl">Software development enthusiastic,pursuing Bachelor's of Computer Application. Currently working on Frontend Development</p>
+                <p className=" text-slate-500 dark:text-slate-300 mt-5 md:text-lg lg:text-xl">Software development enthusiastic,pursuing Bachelor's of Computer Application. Currently working on Frontend Development</p>
 
-                <button className="shadow-md shadow-black mt-6 py-2 px-4 bg-slate-600 text-white rounded-lg md:text-lg lg:text-xl font-semibold">
+                <button className="shadow-md shadow-black mt-6 py-2 px-4 bg-slate-600 dark:gradient text-white rounded-lg md:text-lg lg:text-xl font-semibold">
                     <a href="https://api.whatsapp.com/send?phone=+917076927417&text=Hello,%20more%20information!">Say hello!!</a>
                 </button>
             </div>
